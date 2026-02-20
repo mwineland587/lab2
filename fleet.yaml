@@ -1,0 +1,10 @@
+defaultNamespace: default
+helm:
+  takeOwnership: true
+targetCustomizations:
+# Sandbox clusters
+- name: local
+  clusterName: local
+  takeOwnership: true
+  kustomize:
+    dir: overlays/sandbox/lab2
